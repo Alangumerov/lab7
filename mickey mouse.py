@@ -10,9 +10,9 @@ CENTER = (WIDTH // 2, HEIGHT // 2)
 BG_COLOR = (255, 255, 255)
 
 
-clock_face = pygame.image.load('images/photo_5373113437619612369_x.jpg')  # Загружаем изображение циферблата
-hand_for_minutes = pygame.image.load('images/photo_5373113437619612371_x-removebg-preview.png')  # Загружаем минутную стрелку
-hand_for_seconds = pygame.image.load('images/photo_5373113437619612372_x-removebg-preview.png')  # Загружаем секундную стрелку
+clock_face = pygame.image.load('images/photo_5373113437619612369_x.jpg')  
+hand_for_minutes = pygame.image.load('images/photo_5373113437619612371_x-removebg-preview.png') 
+hand_for_seconds = pygame.image.load('images/photo_5373113437619612372_x-removebg-preview.png')  
 
 
 clock_face = pygame.transform.scale(clock_face, (800, 600))
