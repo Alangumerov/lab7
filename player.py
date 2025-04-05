@@ -2,16 +2,19 @@
 import pygame
 import os
 pygame.init()
+#дисплей создание
 WIDTH, HEIGHT = 800, 600
 screen=pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.mixer.init()
 MUSIC_FOLDER="music"
 tracks=[f for f in os.listdir(MUSIC_FOLDER) if f.endswith(('.mp3', '.wav'))]
+#условие если ничего не играет
 if not tracks:
     raise FileNotFoundError("Ошибка")
 current_track=0
 paused=False
 playing=False
+#создание функций
 def play(index):
     global paused
     paused=False
@@ -44,6 +47,7 @@ def pause():
 play(current_track)
 running=True
 while running:
+    #управление
     for event in pygame.event.get():
       if event.type==pygame.QUIT:
           running=False
