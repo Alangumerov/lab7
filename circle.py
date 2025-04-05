@@ -1,7 +1,7 @@
 import pygame
 
 pygame.init()
-
+#экран
 screen=pygame.display.set_mode((800,600))
 x,y=400,300
 step = 20
@@ -9,6 +9,7 @@ red = (255, 0, 0)
 radius=25
 running=True
 while running:
+    #управление
     for event in pygame.event.get():
         if event.type==pygame.QUIT:
             running=False
